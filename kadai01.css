@@ -31,19 +31,8 @@ footer{
     position: relative;
 }
 
-.content2{
-    width:300px;
-    background-color: #eee;
-    padding:10px;
-    margin-right: 30px;
-    position: relative;
-}
-
-.content3{
-    width:300px;
-    background-color: #eee;
-    padding:10px;
-    position: relative;
+.content:last-child {
+    margin-right: 0px;
 }
 
 .img-1{
@@ -71,11 +60,53 @@ footer{
 }
 
 .step{
-    position:absolute;
-    top:  0;
-    left:0;
+    position: absolute;
+    top:0px;
+    left:0px;
     background-color: #ff9a4b;
     color:#fff;
     
 }
+
+@media(max-width:768px){
+    main{
+        display:block;/*flex解除*/
+        width: 100%; 
+        
+    }
+
+    .content{
+        width:90%;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    
+    .content:last-child {
+        margin-right:auto;
+    }
+
+    
+    .img-1{
+        background-image: url(10img/flow01.png);
+        background-position: bottom;
+        background-size: cover;
+    }
+
+    .img-2{
+        background-image: url(10img/flow02.png);
+        background-position: bottom;
+        background-size: cover;
+    }
+
+    .img-3{
+        background-image: url(10img/flow03.png);
+        background-position: bottom;
+        background-size: cover;
+    }
+}
+
+
+
 
